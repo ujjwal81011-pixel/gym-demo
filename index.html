@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>[YOUR GYM NAME] - Elite Fitness & High Performance Training Club</title>
+  <meta name="description" content="Welcome to [YOUR GYM NAME]. Experience top-tier fitness equipment, expert personal training, group classes, and 24/7 access. Claim your free 3-day pass today!">
+  <meta name="keywords" content="gym, fitness, workout, personal trainer, bodybuilding, crossfit, HIIT, yoga, strength training, [YOUR CITY]">
+  <meta name="author" content="[YOUR GYM NAME]">
+  <meta name="theme-color" content="#0d1017">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="[YOUR GYM NAME] - Transform Your Body, Elevate Your Mind">
+  <meta property="og:description" content="State of the art fitness center, elite coaches, 24/7 access, and results-driven training. Claim your free 3-day guest pass!">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR & QUICK BRAND CUSTOMIZER TOOL
+       ========================================================================== -->
+  <div class="top-announcement">
+    <div class="announcement-text">
+      <span class="pulse-dot" style="display:inline-block; width:8px; height:8px; background:#ccff00; border-radius:50%;"></span>
+      <span><strong>SPECIAL OFFER:</strong> Claim Your <strong>3-Day Free VIP Guest Pass</strong> Today! Valid until end of month.</span>
+    </div>
+    <button class="btn-toggle-customizer" id="toggleCustomizerBtn" title="Test replacing placeholders with your real gym info">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      Brand Customizer
+    </button>
+  </div>
+
+  <!-- Collapsible Live Brand Customizer (Interactive Helper Tool) -->
+  <div class="customizer-drawer" id="customizerDrawer">
+    <div class="container">
+      <div class="customizer-header">
+        <div class="customizer-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Quick Brand Customizer (Instant Live Preview)
+        </div>
+        <button id="closeCustomizerBtn" class="btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem;">Close ✕</button>
+      </div>
+      <div class="customizer-inputs-grid">
+        <div class="customizer-field">
+          <label for="inputGymName">Gym / Brand Name</label>
+          <input type="text" id="inputGymName" placeholder="e.g. Apex Beast Fitness">
+        </div>
+        <div class="customizer-field">
+          <label for="inputGymTagline">Tagline / Slogan</label>
+          <input type="text" id="inputGymTagline" placeholder="e.g. Unleash Your Inner Beast">
+        </div>
+        <div class="customizer-field">
+          <label for="inputGymPhone">Phone Number</label>
+          <input type="text" id="inputGymPhone" placeholder="e.g. +1 (555) 789-4321">
+        </div>
+        <div class="customizer-field">
+          <label for="inputGymEmail">Email Address</label>
+          <input type="email" id="inputGymEmail" placeholder="e.g. contact@apexgym.com">
+        </div>
+        <div class="customizer-field">
+          <label for="inputGymAddress">Address / Location</label>
+          <input type="text" id="inputGymAddress" placeholder="e.g. 742 Evergreen Terrace, Springfield">
+        </div>
+        <div class="customizer-actions">
+          <button id="resetCustomizerBtn" class="btn btn-outline btn-sm">Reset to Placeholders</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER / NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="site-logo" aria-label="Gym Home">
+        <div class="logo-icon-wrap">
+          <!-- Athletic Dumbbell SVG -->
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 5h2v14H6V5zm-4 4h2v6H2V9zm16-4h2v14h-2V5zm4 4h2v6h-2V9zM8 11h8v2H8v-2z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-brand placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span>
+          <span class="logo-subtitle">FITNESS CLUB &bull; 24/7</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#programs" class="nav-link">Programs</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#bmi" class="nav-link">BMI Tool</a>
+        <a href="#pricing" class="nav-link">Memberships</a>
+        <a href="#trainers" class="nav-link">Coaches</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Location</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <button class="btn btn-volt btn-sm open-trial-modal" id="navFreeTrialBtn">
+          Free 3-Day Pass
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#programs" class="nav-link">Programs & Workouts</a>
+      <a href="#schedule" class="nav-link">Class Schedule</a>
+      <a href="#bmi" class="nav-link">BMI & Calorie Calculator</a>
+      <a href="#pricing" class="nav-link">Membership Plans</a>
+      <a href="#trainers" class="nav-link">Elite Coaches</a>
+      <a href="#facilities" class="nav-link">Amenities</a>
+      <a href="#reviews" class="nav-link">Transformations</a>
+      <a href="#contact" class="nav-link">Contact & Hours</a>
+    </div>
+
+    <div>
+      <button class="btn btn-volt btn-full open-trial-modal" style="margin-bottom: 24px;">
+        Get 3-Day Free Pass
+      </button>
+
+      <div class="mobile-contact-info">
+        <div class="mobile-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="placeholder-tag" data-ph-key="gym-phone">[+1 (555) 000-FITNESS]</span>
+        </div>
+        <div class="mobile-contact-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="placeholder-tag" data-ph-key="gym-address">[123 FITNESS BLVD, CITY]</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-container">
+      <img src="assets/images/hero-bg.jpg" alt="[YOUR GYM NAME] Luxury Fitness Arena" class="hero-bg-img">
+      <div class="hero-gradient-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-row">
+        <div class="badge-tag">
+          <span class="pulse-dot"></span>
+          24/7 Premium Athletic Facility
+        </div>
+        <div class="hero-subbadge">
+          <span>&bull;</span> <span class="placeholder-tag" data-ph-key="gym-address">[123 FITNESS BLVD, YOUR CITY]</span>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        TRANSFORM YOUR BODY. <br>
+        <span class="highlight">UNLEASH YOUR POWER.</span>
+      </h1>
+
+      <p class="hero-description">
+        Welcome to <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span> &mdash; where champions train and limits get destroyed. 
+        <span class="placeholder-tag" data-ph-key="gym-tagline">[YOUR MOTTO / TAGLINE HERE: Elevate your fitness journey with world-class equipment and elite coaching]</span>.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-volt open-trial-modal" id="heroClaimPassBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Claim 3-Day Free VIP Pass
+        </button>
+        <a href="#schedule" class="btn btn-outline" id="heroScheduleBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          View Class Timetable
+        </a>
+      </div>
+
+      <!-- Live Numeric Stats Counter -->
+      <div class="hero-stats-grid">
+        <div class="hero-stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="2500">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Active Members</span>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="45">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Certified Coaches</span>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="120">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Weekly Classes</span>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-target="99">0</span>
+            <span class="stat-plus">%</span>
+          </div>
+          <span class="stat-label">Member Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HIGHLIGHTED ADVANTAGES / WHY CHOOSE US
+       ========================================================================== -->
+  <section class="features-section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Why Train With Us</div>
+        <h2 class="section-title">BUILT FOR <span class="text-gradient">SERIOUS RESULTS</span></h2>
+        <p class="section-subtitle">
+          At <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span>, we combine cutting-edge biomechanical training gear with relentless coaching support to push past every plateau.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <div>
+            <h3 class="feature-title">Olympic & Heavy Iron</h3>
+            <p class="feature-description">
+              Over 25,000 lbs of calibrated Olympic plates, competition power racks, Eleiko barbells, and dumbbell suites ranging up to 150 lbs.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h3 class="feature-title">24/7 RFID Keycard Access</h3>
+            <p class="feature-description">
+              Train on your schedule. 365 days a year access with secure facial/RFID turnstiles and continuous biometric monitoring.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h3 class="feature-title">Elite Master Trainers</h3>
+            <p class="feature-description">
+              Led by <span class="placeholder-tag" data-ph-key="trainer-name">[HEAD COACH NAME]</span> and certified sports science specialists dedicated to customized nutrition and movement mastery.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <h3 class="feature-title">Cryo & Infrared Recovery</h3>
+            <p class="feature-description">
+              Finish every grueling workout with Finnish cedar saunas, cold plunge baths, Normatec compression boots, and Theragun stations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROGRAMS & WORKOUT DISCIPLINES
+       ========================================================================== -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Training Disciplines</div>
+        <h2 class="section-title">SIGNATURE <span class="text-gradient">WORKOUT PROGRAMS</span></h2>
+        <p class="section-subtitle">
+          Engineered for power, aesthetics, functional mobility, and explosive cardiovascular conditioning.
+        </p>
+      </div>
+
+      <!-- Tab Filters -->
+      <div class="program-tabs">
+        <button class="tab-btn active" data-filter="all">All Disciplines</button>
+        <button class="tab-btn" data-filter="strength">Strength & Iron</button>
+        <button class="tab-btn" data-filter="hiit">HIIT & Conditioning</button>
+        <button class="tab-btn" data-filter="combat">Combat & Boxing</button>
+        <button class="tab-btn" data-filter="mobility">Yoga & Mobility</button>
+      </div>
+
+      <!-- Programs Grid -->
+      <div class="programs-grid">
+        
+        <!-- Program 1: Strength -->
+        <article class="program-card" data-category="strength">
+          <div class="program-img-wrap">
+            <img src="assets/images/workout-strength.jpg" alt="Heavy Barbell Strength Training at [YOUR GYM NAME]" class="program-img">
+            <span class="program-tag">Strength & Iron</span>
+            <span class="program-intensity">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              High Intensity
+            </span>
+          </div>
+          <div class="program-content">
+            <div>
+              <h3 class="program-title">Hypertrophy & Heavy Iron</h3>
+              <p class="program-desc">
+                Progressive overload programming focusing on squat, deadlift, bench, and explosive compound lifts. Led by <span class="placeholder-tag" data-ph-key="trainer-name">[HEAD COACH NAME]</span>.
+              </p>
+            </div>
+            <div>
+              <div class="program-meta">
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60 Mins
+                </span>
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                  650+ kcal
+                </span>
+                <span class="meta-item">All Levels</span>
+              </div>
+              <button class="btn btn-outline btn-sm btn-full open-trial-modal">Try Free Session</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 2: HIIT & Ropes -->
+        <article class="program-card" data-category="hiit">
+          <div class="program-img-wrap">
+            <img src="assets/images/workout-hiit.jpg" alt="Dynamic Battle Ropes HIIT Class at [YOUR GYM NAME]" class="program-img">
+            <span class="program-tag">Metabolic HIIT</span>
+            <span class="program-intensity">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Maximum Burn
+            </span>
+          </div>
+          <div class="program-content">
+            <div>
+              <h3 class="program-title">Battle Ropes & Metabolic Shred</h3>
+              <p class="program-desc">
+                High-octane interval conditioning featuring battle ropes, assault bikes, plyo boxes, and sled pushes to incinerate visceral fat and boost VO2 max.
+              </p>
+            </div>
+            <div>
+              <div class="program-meta">
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  45 Mins
+                </span>
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                  800+ kcal
+                </span>
+                <span class="meta-item">Advanced</span>
+              </div>
+              <button class="btn btn-outline btn-sm btn-full open-trial-modal">Try Free Session</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 3: Boxing & Martial Arts -->
+        <article class="program-card" data-category="combat">
+          <div class="program-img-wrap">
+            <!-- Boxing Visual -->
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=800&q=80" alt="Boxing Fight Class at [YOUR GYM NAME]" class="program-img">
+            <span class="program-tag">Combat Sports</span>
+            <span class="program-intensity">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              High Intensity
+            </span>
+          </div>
+          <div class="program-content">
+            <div>
+              <h3 class="program-title">Championship Boxing & Sparring</h3>
+              <p class="program-desc">
+                Learn footwork, heavy bag combinations, slip drills, and core agility under professional fighting coaches like <span class="placeholder-tag" data-ph-key="trainer-name">[COACH NAME 3]</span>.
+              </p>
+            </div>
+            <div>
+              <div class="program-meta">
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  50 Mins
+                </span>
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                  700+ kcal
+                </span>
+                <span class="meta-item">All Levels</span>
+              </div>
+              <button class="btn btn-outline btn-sm btn-full open-trial-modal">Try Free Session</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Program 4: Yoga & Athletic Mobility -->
+        <article class="program-card" data-category="mobility">
+          <div class="program-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80" alt="Athletic Recovery Yoga at [YOUR GYM NAME]" class="program-img">
+            <span class="program-tag">Mobility & Zen</span>
+            <span class="program-intensity" style="color:var(--accent-cyan);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              Restorative
+            </span>
+          </div>
+          <div class="program-content">
+            <div>
+              <h3 class="program-title">Athletic Flow & Joint Mobility</h3>
+              <p class="program-desc">
+                Designed specifically for lifters and endurance athletes to release tight hip flexors, decompress lumbar spine, and prevent injury.
+              </p>
+            </div>
+            <div>
+              <div class="program-meta">
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  60 Mins
+                </span>
+                <span class="meta-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                  350 kcal
+                </span>
+                <span class="meta-item">Gentle / All</span>
+              </div>
+              <button class="btn btn-outline btn-sm btn-full open-trial-modal">Try Free Session</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE BMI & CALORIE CALCULATOR TOOL
+       ========================================================================== -->
+  <section class="bmi-section" id="bmi">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Smart Fitness Tool</div>
+        <h2 class="section-title">CALCULATE YOUR <span class="text-gradient">BMI & CALORIE GOAL</span></h2>
+        <p class="section-subtitle">
+          Get real-time insights into your body composition metrics and receive custom workout and nutrition targets from our trainers.
+        </p>
+      </div>
+
+      <div class="bmi-grid">
+        <!-- Form Inputs -->
+        <div class="bmi-form-card">
+          <!-- Unit Switcher -->
+          <div class="unit-switcher">
+            <button class="unit-btn active" id="unitMetric" type="button">Metric (cm / kg)</button>
+            <button class="unit-btn" id="unitImperial" type="button">Imperial (in / lbs)</button>
+          </div>
+
+          <!-- Gender Choice -->
+          <div class="bmi-input-group" style="margin-bottom: 12px;">
+            <label>Biological Gender</label>
+            <div class="gender-selector">
+              <button class="gender-btn active" type="button" data-gender="male">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="14" r="5"/><path d="M19 5l-5.4 5.4"/><path d="M19 5h-5"/><path d="M19 5v5"/></svg>
+                Male
+              </button>
+              <button class="gender-btn" type="button" data-gender="female">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="5"/><path d="M12 15v7"/><path d="M9 19h6"/></svg>
+                Female
+              </button>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="bmi-input-group">
+              <label for="bmiHeight">Height</label>
+              <div class="input-with-unit">
+                <input type="number" id="bmiHeight" value="178" min="50" max="260">
+                <span class="input-unit-label" id="heightUnit">cm</span>
+              </div>
+            </div>
+
+            <div class="bmi-input-group">
+              <label for="bmiWeight">Weight</label>
+              <div class="input-with-unit">
+                <input type="number" id="bmiWeight" value="74" min="20" max="300">
+                <span class="input-unit-label" id="weightUnit">kg</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bmi-input-group" style="margin-bottom: 24px;">
+            <label for="bmiAge">Age (Years)</label>
+            <div class="input-with-unit">
+              <input type="number" id="bmiAge" value="26" min="14" max="99">
+              <span class="input-unit-label">yrs</span>
+            </div>
+          </div>
+
+          <button class="btn btn-volt btn-full" id="calculateBmiBtn" type="button">
+            Recalculate Metrics
+          </button>
+        </div>
+
+        <!-- Live Results Box -->
+        <div class="bmi-result-card">
+          <span style="font-size: 0.85rem; font-weight:700; color: var(--text-muted); text-transform:uppercase; letter-spacing:0.06em;">Your Estimated Index</span>
+          <div class="result-meter-box">
+            <div class="bmi-value-display" id="bmiValueDisplay">23.4</div>
+            <div class="bmi-status-badge" id="bmiStatusBadge">Healthy & Optimal Weight</div>
+          </div>
+
+          <div class="bmi-gauge-track">
+            <div class="bmi-gauge-fill" id="bmiGaugeFill" style="width: 50%;"></div>
+          </div>
+          <div class="bmi-ranges-legend">
+            <span>&lt;18.5 (Under)</span>
+            <span>18.5 - 24.9 (Normal)</span>
+            <span>25 - 29.9 (Over)</span>
+            <span>30+ (Obese)</span>
+          </div>
+
+          <div class="bmi-recommendation">
+            <div class="bmi-rec-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Trainer Recommendation
+            </div>
+            <p class="bmi-rec-text">
+              Target Program: <strong id="bmiProgramRec" style="color:var(--accent-volt);">Athletic Conditioning & High Performance Training</strong>. 
+              Estimated Daily Calorie Target: <strong id="bmiCalorieRec" style="color:#fff;">~2,450 kcal / day</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CLASS SCHEDULE & TIMETABLE
+       ========================================================================== -->
+  <section class="schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Weekly Timetable</div>
+        <h2 class="section-title">LIVE CLASS <span class="text-gradient">SCHEDULE</span></h2>
+        <p class="section-subtitle">
+          Join high-energy group sessions led by certified coaches. Filter by day and reserve your spot instantly.
+        </p>
+      </div>
+
+      <!-- Day filter pills -->
+      <div class="day-filters">
+        <button class="day-btn active" data-day="monday">Monday</button>
+        <button class="day-btn" data-day="tuesday">Tuesday</button>
+        <button class="day-btn" data-day="wednesday">Wednesday</button>
+        <button class="day-btn" data-day="thursday">Thursday</button>
+        <button class="day-btn" data-day="friday">Friday</button>
+        <button class="day-btn" data-day="saturday">Saturday</button>
+        <button class="day-btn" data-day="sunday">Sunday</button>
+      </div>
+
+      <!-- Dynamic Schedule Table List -->
+      <div class="schedule-table-wrap">
+        <div class="schedule-grid-list" id="scheduleList">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MEMBERSHIP PLANS & PRICING
+       ========================================================================== -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Transparent Pricing</div>
+        <h2 class="section-title">CHOOSE YOUR <span class="text-gradient">MEMBERSHIP PASS</span></h2>
+        <p class="section-subtitle">
+          No hidden sign-up charges. Cancel anytime. Flexible plans tailored to every fitness goal.
+        </p>
+      </div>
+
+      <!-- Billing Period Switcher -->
+      <div class="pricing-billing-toggle">
+        <span class="billing-label active" id="labelMonthly">Billed Monthly</span>
+        <div class="toggle-switch" id="billingSwitch" role="button" aria-label="Toggle Annual Billing" tabindex="0">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="billing-label" id="labelYearly">
+          Billed Annually
+          <span class="discount-pill">SAVE 20%</span>
+        </span>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-grid">
+        
+        <!-- Tier 1: Starter -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="tier-name placeholder-tag" data-ph-key="plan-name-1">[BASIC STARTER]</h3>
+            <p class="tier-desc">Ideal for self-directed athletes looking for essential gym access.</p>
+          </div>
+          <div>
+            <div class="pricing-cost-wrap">
+              <span class="currency">$</span>
+              <span class="price-amount" id="priceStarter">29</span>
+              <span class="price-period">/ month (cancel anytime)</span>
+            </div>
+            <ul class="plan-features-list">
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Access during standard hours (6 AM - 10 PM)
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Full cardio & free weights arena access
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Locker room & power showers
+              </li>
+              <li class="plan-feature-item disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                24/7 Unlimited Night Access
+              </li>
+              <li class="plan-feature-item disabled">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Group HIIT & Boxing classes
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline btn-full open-trial-modal">Select Starter Plan</button>
+        </div>
+
+        <!-- Tier 2: Pro (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-ribbon">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="tier-name placeholder-tag" data-ph-key="plan-name-2">[PRO ATHLETE PASS]</h3>
+            <p class="tier-desc">Our flagship membership with full 24/7 access and all group training.</p>
+          </div>
+          <div>
+            <div class="pricing-cost-wrap">
+              <span class="currency">$</span>
+              <span class="price-amount" id="pricePro">59</span>
+              <span class="price-period">/ month (cancel anytime)</span>
+            </div>
+            <ul class="plan-features-list">
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong>24/7/365 Unlimited Access</strong>
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                All group classes (HIIT, Boxing, Yoga)
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                1 Monthly InBody 3D Body Scan
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Finnish Sauna & Cold Plunge Lounge
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                1 Free Monthly Guest Pass
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-volt btn-full open-trial-modal">Join Pro Athlete</button>
+        </div>
+
+        <!-- Tier 3: VIP Elite -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="tier-name placeholder-tag" data-ph-key="plan-name-3">[VIP BEAST ACCESS]</h3>
+            <p class="tier-desc">White-glove training with dedicated 1-on-1 personal coaching.</p>
+          </div>
+          <div>
+            <div class="pricing-cost-wrap">
+              <span class="currency">$</span>
+              <span class="price-amount" id="priceVip">109</span>
+              <span class="price-period">/ month (cancel anytime)</span>
+            </div>
+            <ul class="plan-features-list">
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Everything in Pro Athlete Pass
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <strong>4 Personal Training Sessions / Month</strong>
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Custom Nutrition & Macro Blueprint
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Private VIP Locker & Towel Valet
+              </li>
+              <li class="plan-feature-item active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Unlimited Free Protein Shakes
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline btn-full open-trial-modal">Select VIP Elite</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ELITE COACHES / TRAINERS SECTION
+       ========================================================================== -->
+  <section class="trainers-section" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Certified Masters</div>
+        <h2 class="section-title">MEET OUR <span class="text-gradient">ELITE COACHES</span></h2>
+        <p class="section-subtitle">
+          World-class certified fitness coaches committed to pushing your physical boundaries safely and effectively.
+        </p>
+      </div>
+
+      <div class="trainers-grid">
+        
+        <!-- Trainer 1 -->
+        <article class="trainer-card">
+          <div class="trainer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80" alt="[HEAD COACH NAME] - Strength Specialist" class="trainer-img">
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" class="trainer-social-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name placeholder-tag" data-ph-key="trainer-name-1">[HEAD COACH NAME 1]</h3>
+            <div class="trainer-role">Head Strength & Conditioning Coach</div>
+            <p class="trainer-bio">
+              Former national powerlifting champion with 12+ years of experience training elite athletes in barbell mechanics and maximum hypertrophy.
+            </p>
+            <div class="trainer-stats-row">
+              <span>CSCS &bull; USAW Level 2</span>
+              <span>10+ Yrs Exp</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trainer 2 -->
+        <article class="trainer-card">
+          <div class="trainer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="[COACH NAME 2] - HIIT Master" class="trainer-img">
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" class="trainer-social-btn" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name placeholder-tag" data-ph-key="trainer-name-2">[COACH NAME 2]</h3>
+            <div class="trainer-role">Functional HIIT & Metabolic Director</div>
+            <p class="trainer-bio">
+              Specialized in explosive sprint endurance, high-density kettlebell circuits, and sustainable body recomposition protocols.
+            </p>
+            <div class="trainer-stats-row">
+              <span>NASM-CPT &bull; FMS Level 1</span>
+              <span>8 Yrs Exp</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trainer 3 -->
+        <article class="trainer-card">
+          <div class="trainer-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80" alt="[COACH NAME 3] - Boxing Coach" class="trainer-img">
+            <div class="trainer-social-overlay">
+              <a href="#" class="trainer-social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name placeholder-tag" data-ph-key="trainer-name-3">[COACH NAME 3]</h3>
+            <div class="trainer-role">Boxing & Striking Conditioning Coach</div>
+            <p class="trainer-bio">
+              Golden Gloves contender bringing disciplined ring footwork, hand speed development, and relentless cardiac conditioning to all members.
+            </p>
+            <div class="trainer-stats-row">
+              <span>USA Boxing Certified</span>
+              <span>9 Yrs Exp</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AMENITIES & FACILITY SHOWCASE
+       ========================================================================== -->
+  <section class="facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">First-Class Amenities</div>
+        <h2 class="section-title">THE ULTIMATE <span class="text-gradient">TRAINING ENVIRONMENT</span></h2>
+        <p class="section-subtitle">
+          Designed from the floor up to inspire intense focus and luxurious post-workout rest.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="facility-detail">
+            <h4>Sprint Turf Arena</h4>
+            <p>50-yard high-density indoor turf track with magnetic resistance sleds and agility hurdles.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="facility-detail">
+            <h4>Fuel & Smoothie Bar</h4>
+            <p>Fresh whey isolates, organic plant protein smoothies, cold brew coffee, and macro meal preps.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="facility-detail">
+            <h4>Cedar Sauna & Cold Plunge</h4>
+            <p>190&deg;F traditional Finnish dry sauna paired with 45&deg;F cold water recovery pools.</p>
+          </div>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="facility-detail">
+            <h4>Luxury Locker Suites</h4>
+            <p>Digital coded lockers, rainfall showers, Dyson hair dryers, and plush towel service.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS & MEMBER SUCCESS STORIES
+       ========================================================================== -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Success Stories</div>
+        <h2 class="section-title">REAL PEOPLE. <span class="text-gradient">REAL TRANSFORMATIONS</span></h2>
+        <p class="section-subtitle">
+          Discover how members at <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span> transformed their energy and physical capability.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="quote-text">
+              "Training at <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span> changed everything. The energy in the iron room is unmatched and the coaches truly care about proper technique over ego lifting."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">JD</div>
+            <div>
+              <div class="reviewer-name placeholder-tag" data-ph-key="member-name-1">[MEMBER NAME 1]</div>
+              <div class="reviewer-stat">-28 lbs Fat &bull; +14 lbs Muscle</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="quote-text">
+              "The 24/7 access fits my hectic schedule perfectly. Having top-tier Eleiko bars and pristine clean sauna recovery makes every single session feel elite."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SR</div>
+            <div>
+              <div class="reviewer-name placeholder-tag" data-ph-key="member-name-2">[MEMBER NAME 2]</div>
+              <div class="reviewer-stat">Member for 18 Months</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div>
+            <div class="stars-row">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="quote-text">
+              "The HIIT and boxing classes push me harder than I could ever push myself. I went from being completely gassed after 10 minutes to finishing entire 50-minute combat circuits!"
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">MK</div>
+            <div>
+              <div class="reviewer-name placeholder-tag" data-ph-key="member-name-3">[MEMBER NAME 3]</div>
+              <div class="reviewer-stat">Marathon Finisher & Lifter</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FREE TRIAL PASS BOOKING & LOCATION INFO
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Gym Location & Contact Details with Placeholders -->
+        <div class="contact-info-panel">
+          <div>
+            <div class="badge-tag">Visit Our Facility</div>
+            <h2 class="section-title">COME SEE THE <span class="text-gradient">DIFFERENCE</span></h2>
+            <p class="section-subtitle">
+              Take a walk through our training floors, meet our trainers, and experience the highest energy fitness community in <span class="placeholder-tag" data-ph-key="gym-address">[YOUR CITY]</span>.
+            </p>
+
+            <div class="info-cards-stack">
+              <div class="info-card">
+                <div class="info-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="info-text">
+                  <h4>Club Location</h4>
+                  <p class="placeholder-tag" data-ph-key="gym-address">[123 FITNESS BLVD, SUITE 100, YOUR CITY, STATE 10001]</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="info-text">
+                  <h4>Phone & WhatsApp</h4>
+                  <p class="placeholder-tag" data-ph-key="gym-phone">[+1 (555) 000-FITNESS / +1 (555) 123-4567]</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="info-text">
+                  <h4>Email Enquiries</h4>
+                  <p class="placeholder-tag" data-ph-key="gym-email">[CONTACT@YOURGYMNAME.COM]</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="info-text">
+                  <h4>Operating Hours</h4>
+                  <p class="placeholder-tag" data-ph-key="gym-hours">[MEMBERS: 24/7/365 | STAFFED DESK: MON-FRI 6 AM - 10 PM, SAT-SUN 8 AM - 8 PM]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Free Trial Pass Form -->
+        <div class="trial-form-card">
+          <h3 class="form-title">CLAIM 3-DAY FREE PASS</h3>
+          <p class="form-sub">Experience full VIP club access without any commitment. No credit card required.</p>
+
+          <form id="trialBookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="trialName">Full Name</label>
+              <input type="text" id="trialName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="trialPhone">Mobile Phone</label>
+              <input type="tel" id="trialPhone" name="phone" class="form-input" placeholder="e.g. +1 (555) 000-0000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="trialEmail">Email Address</label>
+              <input type="email" id="trialEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="trialGoal">Primary Fitness Goal</label>
+              <select id="trialGoal" name="goal" class="form-select">
+                <option value="muscle">Muscle Gain & Hypertrophy</option>
+                <option value="weightloss">Fat Loss & Toning</option>
+                <option value="endurance">Endurance & Athletic Conditioning</option>
+                <option value="boxing">Boxing & Combat Fitness</option>
+                <option value="rehab">Joint Mobility & Flexibility</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-volt btn-full" style="margin-top: 10px;">
+              Get My Instant Pass
+            </button>
+            <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 8px;">
+              By submitting, you agree to receive a one-time SMS verification pass. No spam guaranteed.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="site-logo">
+            <div class="logo-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6V5zm-4 4h2v6H2V9zm16-4h2v14h-2V5zm4 4h2v6h-2V9zM8 11h8v2H8v-2z"/></svg>
+            </div>
+            <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span>
+          </div>
+          <p>
+            The ultimate modern fitness haven. We empower our athletes with world-class equipment, supportive coaches, and 24/7 access to achieve peak human performance.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#programs">Training Disciplines</a></li>
+            <li><a href="#schedule">Class Timetable</a></li>
+            <li><a href="#bmi">BMI Calculator</a></li>
+            <li><a href="#pricing">Membership Rates</a></li>
+            <li><a href="#trainers">Certified Coaches</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Policies -->
+        <div>
+          <h4 class="footer-col-title">Club Hours</h4>
+          <ul class="footer-links-list">
+            <li><strong>Members:</strong> 24 Hours / 7 Days</li>
+            <li><strong>Staffed:</strong> Mon-Fri 6AM - 10PM</li>
+            <li><strong>Weekend:</strong> Sat-Sun 8AM - 8PM</li>
+            <li><strong>Sauna:</strong> 7AM - 9:30PM Daily</li>
+            <li><a href="#contact" class="placeholder-tag" data-ph-key="gym-phone">[PHONE PLACEHOLDER]</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div>
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">
+            Subscribe for free weekly workout splits, high-protein recipes, and member discounts.
+          </p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="btn btn-volt btn-sm">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="currentYear">2026</span> <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span>. All rights reserved.
+        </div>
+        <div style="display:flex; gap:16px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Guest Waiver</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: CLAIM 3-DAY FREE PASS
+       ========================================================================== -->
+  <div class="modal-overlay" id="trialModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close dialog">✕</button>
+      <h3 id="modalTitle" class="form-title">CLAIM 3-DAY VIP PASS</h3>
+      <p class="form-sub">Get instant full-access pass to <span class="placeholder-tag" data-ph-key="gym-name">[YOUR GYM NAME]</span>.</p>
+
+      <form id="modalTrialForm" class="booking-form">
+        <div class="form-group">
+          <label for="modalName">Full Name</label>
+          <input type="text" id="modalName" name="modal_name" class="form-input" placeholder="e.g. Jordan Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Phone Number</label>
+          <input type="tel" id="modalPhone" name="modal_phone" class="form-input" placeholder="e.g. +1 (555) 345-6789" required>
+        </div>
+        <div class="form-group">
+          <label for="modalEmail">Email Address</label>
+          <input type="email" id="modalEmail" name="modal_email" class="form-input" placeholder="e.g. jordan@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPreferredTime">Preferred Start Date</label>
+          <input type="date" id="modalPreferredTime" class="form-input" required>
+        </div>
+        <button type="submit" class="btn btn-volt btn-full" style="margin-top: 10px;">
+          Generate My VIP Barcode
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: CLASS SPOT BOOKING
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close dialog">✕</button>
+      <h3 id="bookingModalTitle" class="form-title">RESERVE CLASS SPOT</h3>
+      <p class="form-sub">Booking for: <strong id="modalSelectedClass" style="color:var(--accent-volt);">Class Name</strong></p>
+
+      <form id="modalClassBookingForm" class="booking-form">
+        <div class="form-group">
+          <label for="bookName">Your Name</label>
+          <input type="text" id="bookName" class="form-input" placeholder="e.g. Taylor Reed" required>
+        </div>
+        <div class="form-group">
+          <label for="bookMemberId">Member ID or Guest Phone</label>
+          <input type="text" id="bookMemberId" class="form-input" placeholder="e.g. #GYM-4921 or +1 (555) 000-0000" required>
+        </div>
+        <button type="submit" class="btn btn-volt btn-full" style="margin-top: 10px;">
+          Confirm Spot Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="systemToast" class="toast-box"></div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script src="js/app.js"></script>
+</body>
+</html>
